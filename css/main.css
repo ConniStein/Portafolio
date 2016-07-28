@@ -1,0 +1,27 @@
+.icono-menu {
+  height: 8%;
+  width: 8%; }
+
+.sobre-mi {
+  background-color: #6AC6E6;
+  height: 700px;
+  padding: 150px 100px; }
+
+.habilidades {
+  background-color: #2AA3C1;
+  height: 700px; }
+
+.portafolio {
+  background-color: #3991CC;
+  height: 700px; }
+
+.contacto {
+  background-color: #244E77;
+  height: 700px; }
+
+.foto-connita {
+  width: 30%;
+  height: 30%;
+  margin-left: 400px; }
+
+/*# sourceMappingURL=main.css.map */
