@@ -2,85 +2,226 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="img/conni-avatar-square.jpg" type="image/jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" > 
+	<link rel="shortcut icon" href="img/logosmall.png" type="image/jpg">
 	<title>ConniStein</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Creepster|Reem+Kufi" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+
+	<nav class="navbar navbar-default navbar-fixed-top menu-menu">
 	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	    <div class="navbar-header navbar-fixed-top">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a href="#"><img src="img/conni-avatar-square.jpg" class="icono-menu"></a>
+	      <a class="navbar-brand" href="/">
+	        <img alt="Brand" src="img/LogoStein.png" class="icono-menu">
+	      </a>
 	    </div>
-
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#sobre-mi">Hola!<span class="sr-only">(current)</span></a></li>
-	        <li><a href="#habilidades">Lo que disfruto hacer</a></li>
-	        <li><a href="#portafolio">Portafolio</a></li>
-	        <li><a href="#contacto">Contáctame!</a></li>
+	    <div class="collapse navbar-collapse" id="menu">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#hola">Hola!</a></li>
+		    <li><a href="#sobre-mi">Un poco sobre mí</a></li>
+		    <li><a href="#habilidades">Lo que disfruto hacer</a></li>
+		    <li><a href="#portafolio">Portafolio</a></li>
+		    <li><a href="#contacto">Contáctame!</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 
+
+
+	<!--seccion "hola"-->
+	<section class="hola" id="hola">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="introduccion text-center">Hello there! Yo soy Constanza Villagran, Front-end developer. Te invito a conocer un poco más de mí y de lo que hago.</h1>
+					<button class="btn btn-default btn-lg center-block button-letsgo"><a href="#sobre-mi">Let's go!</a></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--seccion "sobre mí"-->
 	<section class="sobre-mi" id="sobre-mi">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
-					<img class="img-circle img-responsive foto-connita" src="img/connita.jpg"></img>
-					<h3 class="texto-sobremi text-center"><em>"Hola! Soy Constanza Villagran. Desarrolladora web Front-end"</em></h3>
+				<div class="col-md-5 col-md-offset-1">
+					<img class="img-responsive foto-connita" src="img/connita.jpg"></img>
+				</div>
+				<div class="col-md-6">
+					<div class="hover panel">
+				        <div class="front">
+				            <div class="pad">
+				                <p>Hola! Yo soy Conni, front-end developer. Soy alumna egresada de la segunda generación de Laboratoria Chile. Soy una persona entusiasta por aprender día a día. Estoy enfocada en el diseño UX/UI.  </p>
+				            </div>
+				        </div>
+				        <div class="back">
+				            <div class="pad">
+				                <p>Aparte del código disfruto mucho escuchar música a todas horas, aprender nuevos idiomas , comer dulces y salir a explorar la cuidad con mi familia.</p>
+				            </div>
+				        </div>
+				    </div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="habilidades" id="habilidades">
+	<!--seccion "habilidades"-->
+	<section class="habilidades bg-habilidades" id="habilidades">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
-					<!--Acá va la info-->
+				<h3>Lo que disfruto hacer.</h3>
+				<div class="col-md-4">
+					<h4 class="skills-parrafo">En laboratoria hemos aprendido muchas herramientas útiles para poder realizar un buen diseño web.</h4>
+					<h5 class="skills-parrafo">Además hemos aprendido un poco sobre</h5>
+					<ul class="skills-parrafo">
+						<li>Angular JS</li>
+						<li>Devtools</li>
+						<li>Metodologías ágiles</li>
+						<li>Diseño UX</li>
+						<li>Photoshop & Illustrator</li>
+					</ul>
+				</div>
+				<div class="col-md-8 col-sm-6">
+					<div class="caja-skill">
+						<img class="icono-skill img-responsive" src="img/skill0.png"></img>
+						<p class="skillname">HTML</p>
+					</div>
+					<div class="caja-skill">
+						<img class="icono-skill img-responsive" src="img/skill1.png"></img>
+						<p class="skillname">CSS</p>
+					</div>
+					<div class="caja-skill">
+						<img class="icono-skill img-responsive" src="img/skill2.png"></img>
+						<p class="skillname">JavaScript</p>
+					</div>
+					<div class="caja-skill">
+						<img class="icono-skill img-responsive" src="img/skill3.png"></img>
+						<p class="skillname">Bootstrap</p>
+					</div>		
+					<div class="row">
+						<div class="caja-skill">
+							<img class="icono-skill img-responsive" src="img/skill4.png"></img>
+							<p class="skillname">jQuery</p>
+						</div>
+						<div class="caja-skill">
+							<img class="icono-skill img-responsive" src="img/skill5.png"></img>
+							<p class="skillname">Sass</p>
+						</div>
+						<div class="caja-skill">
+							<img class="icono-skill img-responsive" src="img/skill6.png"></img>
+							<p class="skillname">Git</p>
+						</div>
+						<div class="caja-skill">
+							<img class="icono-skill img-responsive" src="img/skill7.png"></img>
+							<p class="skillname">Materialize</p>
+						</div>
+					</div>				
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!--seccion "portafolio"-->
 	<section class="portafolio" id="portafolio">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
-					<!--Acá va la info-->
+			<h3>Estos son algunos de mis trabajos</h3>
+				<div class="col-md-4 proyect-caja">
+					<a href="connistein.github.io/PeliculasPorCategoria">
+						<img class="img-responsive proyect-img" src="img/img-proyecto1.jpg"></img>
+					</a>
+					<p class="proyect-text text-center">Películas por categoría</p>
+				</div>
+				<div class="col-md-4 proyect-caja">
+					<a href="connistein.github.io/SitioMaterialize">
+						<img class="img-responsive proyect-img" src="img/img-proyecto2.jpg"></img>
+					</a>
+					<p class="proyect-text text-center">BandsNow!</p>
+				</div>
+				<div class="col-md-4 proyect-caja">
+					<a href="opazisimo.github.io/laboratoria-meetup">
+						<img class="img-responsive proyect-img" src="img/img-proyecto3.jpg"></img>
+					</a>
+					<p class="proyect-text text-center">Meetup Laboratoria</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 proyect-caja">
+					<a href="connistein.github.io/DashgumFreeTheme">
+						<img class="img-responsive proyect-img" src="img/img-proyecto4.jpg"></img>
+					</a>
+					<p class="proyect-text text-center">Dashgum Free Theme</p>
+				</div>
+				<div class="col-md-4 proyect-caja">
+					<a href="connistein.github.io/">
+						<img class="img-responsive proyect-img" src="img/img-proyecto5.jpg"></img>
+					</a>
+					<p class="proyect-text text-center">Marca personal</p>
+				</div>
+				<div class="col-md-4 proyect-caja">
+					<a href="sandrafp.github.io/AR13-HACKATON">
+						<img class="img-responsive proyect-img" src="img/img-proyecto6.jpg"></img>
+					</a>
+					<p class="proyect-text text-center">Hackatón AR13</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!--seccion "contacto"-->
 	<section class="contacto" id="contacto">
+		<div class="container-fluid">
+			<div class="row ">
+				<div class="col-md-6 caja-mail">
+					<h2 class="texto-contacto">Si tienes alguna idea loca en mente, <br>escríbeme a :<h2 class="mail">cvillagranpoblete1994@gmail.com</h2><h2>También puedes contactarme a través <br>de mis redes sociales.</h2></h2>
+				</div>
+				<div class="col-md-6">
+					<div class="col-md-6">
+						<a href="https://linkedin.com/ConstanzaVillagran">
+							<img class="social-icon img-responsive" src="img/social1.png"></img>
+						</a>
+						<a href="https://plus.google.com/u/0/117152461147687316345/">
+							<img class="social-icon img-responsive" src="img/social2.png"></img>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="https://twitter.com/ConniStein">
+							<img class="social-icon img-responsive" src="img/social3.png"></img>
+						</a>
+						<a href="https://constanzavillagran.youcanbook.me/">
+							<img class="social-icon img-responsive" src="img/social4.png"></img>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<!--Acá va la info-->
+					<h4 class="texto-footer text-center">Creado por ConniStein © 2016</h4>
 				</div>
 			</div>
 		</div>
-	</section>
+	</footer>
 
 
 <!--SCRIPTS-->
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/smoothscrolling.jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
