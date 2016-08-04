@@ -1,3 +1,5 @@
+@import 'mediaqueries';
+
 /*variables*/
 $calipso: #02AFB6;
 $morado: #592080;
@@ -36,9 +38,8 @@ h3{
 	background-color: rgba(24, 255, 255, 0.3);
 	padding-bottom:10px;
 	border-color: rgba(24, 255, 255, 0.3);
-
+	transition-duration: 2s;
 }
-
 
 
 .navbar-default .navbar-nav>li>a{
