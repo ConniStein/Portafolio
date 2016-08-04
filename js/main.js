@@ -39,7 +39,7 @@ $(document).ready(function(){
       if(scroll_start > offset.top) {
           $('.menu-menu').css('background-color', '#02AFB6');
        } else {
-          $('.menu-menu').css('background-color', 'transparent');
+          $('.menu-menu').css('background-color', 'rgba(24, 255, 255, 0.3)');
        }
    });
 });
