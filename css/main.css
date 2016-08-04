@@ -1,0 +1,222 @@
+/*variables*/
+/*estilos globales*/
+section {
+  padding: 50px; }
+
+h3 {
+  font-size: 5em;
+  color: #592080; }
+
+/*Menu*/
+* {
+  font-family: 'Reem Kufi', sans-serif; }
+  * .introduccion {
+    font-family: 'Creepster', cursive; }
+
+.icono-menu {
+  height: 110px;
+  width: 300px;
+  padding: 0px 5px 35px 25px;
+  margin-left: 15px;
+  margin-top: -10px; }
+
+.menu-menu {
+  background-color: rgba(24, 255, 255, 0.3);
+  padding-bottom: 10px;
+  border-color: rgba(24, 255, 255, 0.3); }
+
+.navbar-default .navbar-nav > li > a {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  color: #592080; }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #592080;
+    background-color: transparent;
+    border-bottom: 2px solid #592080; }
+
+/*SECCION HOLA*/
+#hola {
+  background-image: url("../img/fondo1.jpg");
+  background-size: cover;
+  height: 700px;
+  padding: 150px 100px; }
+  #hola .introduccion {
+    color: #592080;
+    font-size: 80px; }
+
+.button-letsgo {
+  background-color: #02AFB6;
+  color: #B0D3D2;
+  border: solid transparent;
+  font-weight: 700;
+  padding: 15px 45px;
+  font-size: 1.8em; }
+  .button-letsgo:hover {
+    background-color: #B0D3D2;
+    color: #02AFB6;
+    border: 0px transparent;
+    text-decoration: none; }
+  .button-letsgo a {
+    text-decoration: none; }
+
+/*SECCION SOBRE MI*/
+.sobre-mi {
+  background-color: #6AC6E6;
+  height: 500px;
+  background-image: url("../img/fondo2.jpg"); }
+
+.foto-connita {
+  width: 68%;
+  height: 68%;
+  margin: 0 auto;
+  display: inline-block;
+  margin-top: 25px; }
+
+/*flip, from http://simonlockyer.info/flip-div-css3-tutorial/*/
+.panel {
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  font-size: 1.8em;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  padding: 20px;
+  color: #02AFB6;
+  background-color: #02AFB6;
+  margin-top: 30px; }
+
+.panel .front {
+  position: absolute;
+  top: 0;
+  z-index: 900;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-color: #B0D3D2;
+  padding: 50px; }
+
+.panel.flip .front {
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  background-color: #592080; }
+
+.panel .back {
+  position: absolute;
+  top: 0;
+  z-index: 800;
+  width: inherit;
+  height: inherit;
+  -webkit-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: rotateY(-180deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-color: #B0D3D2;
+  padding: 50px; }
+
+.panel.flip .back {
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  background-color: #592080; }
+
+/*SECCION HABILIDADES*/
+.habilidades {
+  height: 650px;
+  color: #592080; }
+
+.bg-habilidades {
+  background-color: #B0D3D2;
+  background-image: url("../img/fondo3.jpg");
+  background-size: cover; }
+
+.icono-skill {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  height: 70%;
+  width: 70%;
+  margin: 10px 20px 10px 5px; }
+
+.icono-skill:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+.caja-skill {
+  color: #5D2E8C;
+  display: inline-block;
+  float: right; }
+  .caja-skill .skillname {
+    padding-left: 20px;
+    font-size: 1.8em; }
+
+.skills-parrafo {
+  font-size: 1.8em;
+  list-style: none;
+  color: #0E1421; }
+
+/*SECCION PORTAFOLIO*/
+.portafolio {
+  background-color: #FFF;
+  height: 700px; }
+
+.proyect-caja {
+  display: inline-block; }
+  .proyect-caja .proyect-img {
+    height: 100%;
+    /*temporal*/
+    width: 100%;
+    /*temporal*/
+    max-width: 100%;
+    display: inline-block;
+    padding: 10px 20px; }
+  .proyect-caja .proyect-text {
+    padding-left: 20px;
+    font-size: 1.5em;
+    color: #0E1421; }
+
+/*SECCION CONTACTO*/
+.contacto {
+  background-image: url("../img/fondo4.jpg");
+  background-size: cover;
+  height: 500px;
+  color: #0E1421; }
+  .contacto h2 {
+    font-size: 1.9em; }
+  .contacto .mail {
+    font-family: 'Creepster', cursive;
+    color: #592080; }
+
+.social-icon {
+  width: 50%;
+  height: 50%;
+  margin: 10px 20px 20px 10px; }
+
+/*FOOTER*/
+footer {
+  background-color: #0E1421;
+  color: #02AFB6; }
+
+/*# sourceMappingURL=main.css.map */
